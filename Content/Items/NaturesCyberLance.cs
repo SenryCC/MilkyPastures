@@ -18,7 +18,7 @@ namespace MilkyPasture.Content.Items
 			Item.width = 40;
 			Item.height = 40;
 			Item.useTime = 20;
-			Item.useAnimation = 40;
+			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
 			Item.value = Item.buyPrice(silver: 1);

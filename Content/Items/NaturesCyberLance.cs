@@ -1,3 +1,4 @@
+using MilkyPasture.Content.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -25,8 +26,8 @@ namespace MilkyPasture.Content.Items
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
 
-			Item.shoot = ProjectileID.WoodenArrowFriendly;
-			Item.shootSpeed = 100f; // The speed of the projectile (measured in pixels per frame.)
+			Item.shoot = ModContent.ProjectileType<LanceNeedle>();
+			Item.shootSpeed = 10f; // The speed of the projectile (measured in pixels per frame.)
 			//Item.shoot = ProjectileID.WoodenArrowFriendly;
 		}
 

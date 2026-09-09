@@ -9,12 +9,12 @@ using Terraria.ModLoader;
 
 namespace MilkyPasture.Content.Projectiles
 {
-		public class LanceNeedle : ModProjectile
+	public class LanceNeedle : ModProjectile
 	{
 		public override void SetDefaults() {
 			// The width and height don't really matter here because we have custom collision.
-			Projectile.width = 16;
-			Projectile.height = 16;
+			Projectile.width = 40;
+			Projectile.height = 40;
 			Projectile.friendly = true;
 			Projectile.DamageType = DamageClass.Melee;
 			Projectile.penetrate = 3; // The projectile can hit 3 enemies.
@@ -28,6 +28,18 @@ namespace MilkyPasture.Content.Projectiles
 			// Normally, projectiles die after they have hit all the enemies they can.
 			// But, for this case, we want the projectile to continue to live so we can have the visuals of the swing.
 			Projectile.stopsDealingDamageAfterPenetrateHits = true;
+			
+		}
+		
+		public override bool PreDraw(ref Color lightColor) {
+			Texture2D texture = TextureAssets.Projectile[Type].Value;
+			Vector2 origin = new Vector2(248, 110); // Tip of the projectile
+			Main.EntitySpriteDraw(texture, Projectile.Center - Main.screenPosition, null, lightColor, Projectile.rotation, origin, Projectile.scale, SpriteEffects.None, 0);
+			return false;
+		}
+
+		public override void AI() {
+			Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver4;
 		}
 	}
 }

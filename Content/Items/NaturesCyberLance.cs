@@ -25,7 +25,7 @@ namespace MilkyPasture.Content.Items
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
 
-			Item.shoot = ProjectileID.WoodenArrow;
+			Item.shoot = ProjectileID.WoodenArrowFriendly;
 			Item.shootSpeed = 100f; // The speed of the projectile (measured in pixels per frame.)
 			//Item.shoot = ProjectileID.WoodenArrowFriendly;
 		}

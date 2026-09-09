@@ -26,7 +26,7 @@ namespace MilkyPasture.Content.Items
 			Item.autoReuse = true;
 
 			Item.shoot = ProjectileID.Bomb;
-			Item.shootSpeed = 10f; // The speed of the projectile (measured in pixels per frame.)
+			Item.shootSpeed = 100f; // The speed of the projectile (measured in pixels per frame.)
 			//Item.shoot = ProjectileID.WoodenArrowFriendly;
 		}
 

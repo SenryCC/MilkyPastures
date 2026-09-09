@@ -1,0 +1,3 @@
+displayName = Milky Malts
+author = Senry and F1
+version = 0.1

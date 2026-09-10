@@ -15,6 +15,7 @@ namespace MilkyPasture.Content.Projectiles
 			// The width and height don't really matter here because we have custom collision.
 			Projectile.width = 40;
 			Projectile.height = 40;
+			Projectile.scale = 0.2f;
 			Projectile.friendly = true;
 			Projectile.DamageType = DamageClass.Melee;
 			Projectile.penetrate = 3; // The projectile can hit 3 enemies.

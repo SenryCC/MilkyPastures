@@ -15,8 +15,8 @@ namespace MilkyPasture.Content.Items
 		{
 			Item.damage = 510;
 			Item.DamageType = DamageClass.Melee;
-			Item.width = 40;
-			Item.height = 40;
+			Item.width = 30;
+			Item.height = 30;
 			Item.useTime = 20;
 			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Swing;
@@ -31,6 +31,7 @@ namespace MilkyPasture.Content.Items
 			//Item.shoot = ProjectileID.WoodenArrowFriendly;
 		}
 
+	
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();

@@ -38,6 +38,7 @@ namespace MilkyPasture.Content.Items
 			recipe.AddIngredient(ItemID.DirtBlock, 10);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.Register();
+			
 		}
 	}
 }
